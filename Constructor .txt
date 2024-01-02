@@ -1,0 +1,54 @@
+﻿1.What is a Java Constructor?
+
+
+Answer: A Java constructor is a special method that is automatically called when an object is created. It has the same name as the class and is used to initialise the object's state. Constructors do not have a return type.
+
+
+2.What is Constructor Chaining?
+
+
+Answer: Constructor chaining in Java refers to the process of calling one constructor from another within the same class or from a superclass. It helps in reusing code and ensures that common initialization tasks are performed regardless of which constructor is called.
+
+
+3.Can we call a subclass constructor from a superclass constructor?
+
+
+Answer: No, a subclass constructor cannot be directly called from a superclass constructor. However, the superclass constructor is automatically called before the subclass constructor when an object of the subclass is created. This is part of the initialization process.
+
+
+4.What happens if you keep a return type for a constructor?
+
+
+Answer: If you specify a return type for a constructor, it is treated as a regular method, and Java no longer recognizes it as a constructor. Constructors don't have return types, and attempting to declare one with a return type will result in a compilation error.
+
+
+5.What is a No-arg Constructor?
+
+
+Answer: A no-arg constructor is a constructor that takes no parameters. It is a constructor without any arguments. If a class does not explicitly define any constructors, Java provides a default no-arg constructor.
+
+
+6.How is a No-argument constructor different from the Default Constructor?
+
+
+Answer: A no-argument constructor and a default constructor are often used interchangeably. Both terms refer to a constructor with no parameters. The default constructor is automatically provided by Java if no constructor is explicitly defined in the class.
+
+
+7.When do we need Constructor Overloading?
+
+
+Answer: Constructor overloading is needed when you want to create objects with different sets of initial values or configurations. It allows you to provide multiple ways to initialise objects based on various parameters, enhancing flexibility.
+
+
+8.What is the Default Constructor? Explain with an example.
+
+
+Answer: The default constructor is a no-arg constructor automatically provided by Java if no constructor is explicitly defined in a class. It initialises the object with default values. Example:
+java
+Copy code
+public class Example {
+    // Default constructor provided by Java if none is defined
+    // Example() {
+    // }
+}
+If you don't define any constructor, Java automatically includes a default constructor like the one commented out in the example.
